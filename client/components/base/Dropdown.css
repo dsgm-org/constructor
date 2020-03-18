@@ -1,0 +1,89 @@
+#dropdownCurrent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 18px;
+}
+
+.dropdownVisible{
+    padding: 10px 15px;
+    transition: 0.25s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.dropdown{
+    height: max-content;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    background: #0D47A1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 5px;
+}
+
+.dropdownContent{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 39px;
+    border-bottom: 5px solid #eee;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 1;
+}
+
+.dropdownItem{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 15px;
+    color: #0D47A1;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.dropdownItem:hover{
+    background: #eee;
+}
+
+.dropdown:hover .dropdownContent{
+    display: block;
+}
+.dropdown:hover{
+    border: 0;
+}
+.dropdown:hover .dropdownVisible{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid white;
+    background: white;
+    color: #0D47A1;
+    transition: color 0.25s, background 0.25s;
+}
+.dark .dropdown, .dark .dropdownContent, .dark .dropdown:hover .dropdownVisible{
+    border-color: #333;
+}
+
+.dark .dropdown{
+    background: #333;
+    color: white;
+}
+
+.dark .dropdown:hover .dropdownVisible, .dark .dropdownItem, .dark .dropdown:hover{
+    background: #222;
+    color: white;
+    transition: color 0.25s, background 0.25s;
+}
+
+.dark .dropdownItem:hover{
+    background: #444;
+}

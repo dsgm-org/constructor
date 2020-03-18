@@ -1,0 +1,91 @@
+.headerLine{
+    background: #0D47A1;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 1;
+}
+.dark .headerLine{
+    background: #222;
+}
+.headerBlock{
+    display: flex;
+    width: 100%;
+    max-width: 1024px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    z-index: 1;
+}
+
+.headerLogo{
+    font-size: 24px;
+    padding: 15px;
+}
+
+.headerButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.headerBurger{
+    display: none;
+}
+
+.headerSpacing{
+    margin-top: 60px;
+}
+
+@media (max-width: 720px) {
+    .headerButtons, .headerContainer{
+        justify-content: center;
+    }
+
+    .headerBurger{
+        display: flex;
+        align-items: center;
+        margin: 10px 15px;
+        transition: 0.1s;
+        z-index: 1;
+    }
+
+    .headerButtons{
+        display: none;
+        position: fixed;
+        background: #0D47A1;
+        top: 58px;
+        left: 0;
+        right: 0;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        justify-content: flex-start;
+        padding: 15px;
+    }
+
+    .dark .headerButtons{
+        background: #222;
+    }
+
+    .headerOpened{
+        display: flex;
+    }
+
+    .headerBurgerClicked{
+        transform: rotate(90deg);
+        transition: 0.1s;
+    }
+}

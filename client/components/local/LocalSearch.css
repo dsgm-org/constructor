@@ -1,0 +1,76 @@
+.searchRelative{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.searchResults{
+    position: absolute;
+    display: none;
+    top: 41px;
+    left: 5px;
+    right: 5px;
+    color: white;
+    border-bottom: 5px solid #0e4184;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 1;
+}
+.searchTrainDescription{
+    width: calc(100% - 7px);
+}
+.searchTrain{
+    padding: 10px 15px;
+    cursor: pointer;
+    background: #0e4184;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.searchTrain:hover{
+    background: #0D47A1;
+}
+.searchRelative:hover .searchResults{
+    display: block;
+}
+.searchTrainTrain {
+    font-size: 14px;
+}
+.searchTrainModel{
+    font-size: 12px;
+}
+.searchTrainStatus{
+    height: 7px;
+    margin-right: 10px;
+    width: 7px;
+    border-radius: 100%;
+    background: white;
+}
+.searchTrainStatus2{
+    background: #6CDC35;
+}
+.searchTrainStatus3{
+    background: #76DCD9;
+}
+.searchTrainStatus4{
+    background: #DC7A6E;
+}
+.searchTrainStatus5{
+    background: #dc8a68;
+}
+.searchTrainStatus9{
+    background: #dc3525;
+}
+
+.dark .searchResults{
+    border-color: #444;
+}
+
+.dark .searchResults, .dark .searchTrain{
+    background: #333;
+    color: white;
+}
+
+.dark .searchTrain:hover{
+    background: #444;
+}

@@ -1,0 +1,11 @@
+.text-line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@media (max-width: 480px) {
+    .text-line{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

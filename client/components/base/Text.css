@@ -1,0 +1,23 @@
+.text{
+    display: block;
+    margin: 5px;
+}
+.textundefined{
+    margin: 0;
+}
+.textBold{
+    border-bottom: 5px solid #0e4184;
+    padding-bottom: 5px;
+}
+.textStrong, .textBold{
+    font-weight: bold;
+}
+.dark .textBold{
+    border-color: #333;
+}
+.textBig, .textBold{
+    font-size: 24px;
+}
+.textInline{
+    display: inline;
+}
